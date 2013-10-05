@@ -276,7 +276,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Title", s:comment, "", "")
 	call <SID>X("Identifier", s:red, "", "none")
 	call <SID>X("Statement", s:foreground, "", "")
-	call <SID>X("Conditional", s:foreground, "", "")
+	call <SID>X("Conditional", s:purple, "", "")
 	call <SID>X("Repeat", s:foreground, "", "")
 	call <SID>X("Structure", s:purple, "", "")
 	call <SID>X("Function", s:blue, "", "")
@@ -315,9 +315,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("rubyLocalVariableOrMethod", s:orange, "", "")
 	call <SID>X("rubyCurlyBlock", s:orange, "", "")
 	call <SID>X("rubyStringDelimiter", s:green, "", "")
+	call <SID>X("rubyInterpolation", s:orange, "", "")
 	call <SID>X("rubyInterpolationDelimiter", s:orange, "", "")
 	call <SID>X("rubyConditional", s:purple, "", "")
 	call <SID>X("rubyRepeat", s:purple, "", "")
+	call <SID>X("rubyControl", s:red, "", "")
 
 	" Python Highlighting
 	call <SID>X("pythonInclude", s:purple, "", "")
